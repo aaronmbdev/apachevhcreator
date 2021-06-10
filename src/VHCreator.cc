@@ -22,11 +22,7 @@ void usage() {
 }
 
 string getPath(const string& path) {
-    return getPrePath(path)+"public_html/";
-}
-
-string getPrePath(const string& path) {
-    return "/var/www/"+path+"/";
+    return "/var/www/"+path+"/public_html/";
 }
 
 bool requestConfirmation(const string& folder, const string& dominio) {
