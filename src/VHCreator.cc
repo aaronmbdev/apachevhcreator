@@ -169,6 +169,8 @@ int main(int argc, char *argv[]) {
                     aux.replace(aux.find("%SERVERALIAS%"),13,alias);
                 } else if(aux.find("%DOCROOT%") != string::npos) {
                     aux.replace(aux.find("%DOCROOT%"),9,folder);
+                } else if(aux.find("%DOCROOTPRE%") != string::npos) {
+                    aux.replace(aux.find("%DOCROOTPRE%"),9,preFolder);
                 }
                 aux += "\n";
                 fileout << aux;
